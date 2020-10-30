@@ -6,6 +6,8 @@ class Details extends React.Component {
    ** construct with properties
    ** handle those properties upto React
    */
+
+  /*
   constructor(props) {
     super(props);
 
@@ -13,6 +15,10 @@ class Details extends React.Component {
       loading: true,
     };
   }
+  */
+  state = {
+    loading: true,
+  };
 
   /*
    ** arrow functions here will not create a new context unlike `function () {}`

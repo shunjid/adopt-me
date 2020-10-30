@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import pet, { ANIMALS } from "@frontendmasters/pet";
-import useDropDown from "./hooks/useDropdown";
+import useDropDown from "../hooks/useDropdown";
 import Results from "./Results";
 
 const SearchParams = () => {

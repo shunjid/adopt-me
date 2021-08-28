@@ -4,10 +4,10 @@
   "description": "Pet adoption website",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
+    "dev": "parcel index.html",
     "format": "prettier --write \"src/**/*.{html,js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "production": "parcel build src/index.html --public-url /adopt-me/"
+    "production": "parcel build index.html --public-url /adopt-me/"
   },
   "keywords": [],
   "author": "",

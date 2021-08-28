@@ -1,5 +1,3 @@
-import ReactDOM from "react-dom";
-
 import { Pet } from "./components/Pet";
 
 const App = () => {
@@ -11,9 +9,4 @@ const App = () => {
   );
 };
 
-const render = () => {
-  const rootElement = document.getElementById("root");
-  ReactDOM.render(<App />, rootElement);
-};
-
-render();
+export default App;

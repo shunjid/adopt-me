@@ -7,15 +7,17 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2.3.1
-
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+          registry-url: 'https://registry.npmjs.org'
       - name: Install dependencies 🔧
-        run: npm install
+        run: yarn
       - name: Check lint 🔧
-        run: npm run lint
+        run: yarn lint
       - name: Build for production 🔧
-        run: npm run production
+        run: yarn production
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:

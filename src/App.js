@@ -1,10 +1,10 @@
-import { Pet } from "./components/Pet";
+import SearchParams from "./components/SearchParams";
 
 const App = () => {
   return (
     <div>
       <h1>Adopt Me!</h1>
-      <Pet name="Sudo" animal="Dog" breed="Havanese" />
+      <SearchParams />
     </div>
   );
 };

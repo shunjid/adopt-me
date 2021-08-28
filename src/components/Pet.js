@@ -8,4 +8,4 @@ const Pet = ({ name, animal, breed }) => {
   );
 };
 
-export { Pet };
+export default Pet;

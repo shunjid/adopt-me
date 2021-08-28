@@ -1,3 +1,8 @@
 node_modules
 .vscode
 .idea
+.cache/
+dist
+.env
+.DS_Store
+coverage

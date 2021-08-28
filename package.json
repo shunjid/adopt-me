@@ -19,7 +19,12 @@
     "prettier": "^2.3.2"
   },
   "dependencies": {
+    "@babel/core": "7.12.16",
+    "@babel/preset-react": "7.12.13",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
-  }
+  },
+  "browserslist": [
+    "last 3 versions"
+  ]
 }

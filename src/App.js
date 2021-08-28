@@ -1,33 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const Pet = ({ name, animal, breed }) => {
-  return React.createElement("div", {}, [
-    React.createElement("h2", {}, name),
-    React.createElement("p", {}, animal),
-    React.createElement("p", {}, breed),
-  ]);
-};
+import { Pet } from "./components/Pet";
+import { petFeatures } from "./data";
 
 const App = () => {
-  const petFeatures = [
-    {
-      name: "Luna",
-      animal: "Dog",
-      breed: "Havanese",
-    },
-    {
-      name: "Pepper",
-      animal: "Bird",
-      breed: "Cockatiel",
-    },
-    {
-      name: "Sudo",
-      animal: "Dog",
-      breed: "Wheaten Terrier",
-    },
-  ];
-
   return React.createElement("div", {}, [
     React.createElement("h1", {}, "Adopt Me!"),
     ...petFeatures.map((petFeature) => React.createElement(Pet, petFeature)),

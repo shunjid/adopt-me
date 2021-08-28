@@ -1,5 +1,5 @@
 const Pet = ({ name, animal, breed, images, location, id }) => {
-  let hero = "http://pets-v2.dev-apis.com/pets/none.jpg";
+  let hero = "https://pets-v2.dev-apis.com/pets/none.jpg";
 
   if (images.length) {
     hero = images[0];

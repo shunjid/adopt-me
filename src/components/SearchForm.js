@@ -5,7 +5,7 @@ import useBreedList from "../hooks/useBreedList";
 
 const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"];
 
-const SearchParams = () => {
+const SearchForm = () => {
   const [location, setLocation] = useState("Seattle, WA");
   const [animal, setAnimal] = useState("");
   const [breed, setBreed] = useState("");
@@ -85,4 +85,4 @@ const SearchParams = () => {
   );
 };
 
-export default SearchParams;
+export default SearchForm;

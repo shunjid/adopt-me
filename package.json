@@ -1,0 +1,15 @@
+{
+  "name": "adopt-me",
+  "version": "1.0.0",
+  "description": "Pet adoption website",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{html,js,jsx}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  }
+}

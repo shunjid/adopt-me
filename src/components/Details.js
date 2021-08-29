@@ -24,6 +24,10 @@ class Details extends Component {
   }
 
   render() {
+    if (this.state.loading) {
+      return <h2>Loading...</h2>;
+    }
+
     const { animal, breed, city, state, description, name } = this.state;
 
     return (
@@ -31,7 +35,7 @@ class Details extends Component {
         <div>
           <h1>{name}</h1>
           <h2>
-            {animal} - ${breed} - ${city}, ${state}`
+            {animal} - {breed} - {city}, {state}
           </h2>
           <button>Adopt {name}</button>
           <p>{description}</p>

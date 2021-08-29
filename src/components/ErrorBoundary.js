@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 
 class ErrorBoundary extends Component {
   constructor() {
@@ -22,9 +22,21 @@ class ErrorBoundary extends Component {
     this.setState({
       errorMessage: error.message,
     });
+
+    if (this.state.hasError) {
+      setTimeout(() => {
+        this.setState({
+          redirect: true,
+        });
+      }, 2000);
+    }
   }
 
   render() {
+    if (this.state.redirect) {
+      return <Redirect to="/" />;
+    }
+
     if (this.state.hasError) {
       const { errorMessage } = this.state;
       const defaultErrorMessage = "Something went wrong.";
